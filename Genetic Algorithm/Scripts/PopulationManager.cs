@@ -63,7 +63,8 @@ public class PopulationManager : MonoBehaviour {
         populationList.Clear();
 
         // loop through the list one third down
-        for (int i = (int)(sortedList.Count / 2.0f) - 1; i < sortedList.Count - 1; i++)
+	// change the value to divide for by 2, if you want to breed out half of the list
+        for (int i = (int)(sortedList.Count / 3.0f) - 1; i < sortedList.Count - 1; i++)
         {
             populationList.Add(Generate(sortedList[i], sortedList[i + 1]));
             populationList.Add(Generate(sortedList[i + 1], sortedList[i]));
