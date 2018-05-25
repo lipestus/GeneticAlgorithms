@@ -49,8 +49,8 @@ public class PopulationManager : MonoBehaviour {
         // Swap parents DNA Colours and height at 50% at the time.
         */
         offSpring.GetComponent<Chromosome>().r = Random.Range(0, 10) < 5 ? DNA_mom.r : DNA_dad.r;
-        offSpring.GetComponent<Chromosome>().g = Random.Range(0, 10) < 5 ? DNA_mom.r : DNA_dad.r;
-        offSpring.GetComponent<Chromosome>().b = Random.Range(0, 10) < 5 ? DNA_mom.r : DNA_dad.r;
+        offSpring.GetComponent<Chromosome>().g = Random.Range(0, 10) < 5 ? DNA_mom.g : DNA_dad.g;
+        offSpring.GetComponent<Chromosome>().b = Random.Range(0, 10) < 5 ? DNA_mom.b : DNA_dad.b;
         offSpring.GetComponent<Chromosome>().personHeight = (int)Random.Range(0, 10) < 5 ? DNA_mom.personHeight : DNA_dad.personHeight;
         return offSpring;
     }
